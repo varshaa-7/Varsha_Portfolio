@@ -55,7 +55,7 @@ function App() {
   const socialLinks = [
    
     {
-      url: "https://www.instagram.com/i.__.am.__.kiran/?hl=en",
+      url: "https://www.instagram.com/varshaa__710?igsh=YnR6d2NrZnFhb3No",
       network: "instagram"
     },
     {
