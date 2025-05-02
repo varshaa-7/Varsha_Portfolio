@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kiran1126.github.io/Portfolio_React/",
+  "homepage": "https://github.com/varshaa-7/Varsha_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
