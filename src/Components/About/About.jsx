@@ -6,31 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import CountUp from 'react-countup';
 import Avatar from "../../assets/Testimonial/Female_avatar.png"
 
-// This array of objects is used for the Experience numbers
-// const experienceArr = [
-//   // {
-//   //   icon: "local_cafe",
-//   //   number: "57",
-//   //   content: "Cup of coffee"
-//   // },
-//   {
-//     icon: "local_fire_department",
-//     number: "25",
-//     content: "Projects completed"
-//   },
-//   {
-//     icon: "group",
-//     number: "30",
-//     content: "Satisfied clients"
-//   },
-//   {
-//     icon: "editor_choice",
-//     number: "74",
-//     content: "Nominees winner"
-//   }
-// ];
 
-// This array is for the details part in the About section
 const progressArr = [
   {
     domain: "Web development",
@@ -113,30 +89,5 @@ const ProgressSection = () => (
     </div>
   </div>
 );
-
-// const ExperienceSection = () => (
-//   <ScrollAnimation animateIn="fadeIn" delay={100} animateOnce>
-//     <section className="grid grid-flow-row grid-cols-2 md:grid-cols-4 place-items-start md:place-items-center px-5 md:px-16">
-//       {
-//         experienceArr.map((temp, index) => (
-//           <div className="flex gap-4 justify-center" key={index}>
-//             <span className="material-symbols-outlined text-2xl md:text-5xl opacity-20">{temp.icon}</span>
-//             <div className="block">
-//               <p className="text-xl md:text-4xl text-custom-dark font-bold">
-//                 <CountUp 
-//                   delay={3}
-//                   start={0}
-//                   duration={3}
-//                   end={parseInt(temp.number, 10)}
-//                 />
-//               </p>
-//               <p className="text-xs md:text-base text-custom-dark font-normal mt-1 opacity-85">{temp.content}</p>
-//             </div>
-//           </div>
-//         ))
-//       }
-//     </section>
-//   </ScrollAnimation>
-// );
 
 export default About;

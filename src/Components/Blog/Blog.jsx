@@ -54,10 +54,18 @@ const blogArr = [
     img: BlogArtwork_2,
     title: "KBC",
     label: "Project6",
-    icon: "web",
+    icon: "code",
     url: "https://github.com/varshaa-7/kbc",
     category: "additional"
-  }
+  },
+  {
+    img: BlogArtwork_1,
+    title: "Youtube Data Scraping",
+    label: "Project7",
+    icon: "code",
+    url: "https://github.com/varshaa-7/Youtube_data_scraping",
+    category: "additional"
+  },
 ];
 
 function Blog() {

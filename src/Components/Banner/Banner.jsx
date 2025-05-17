@@ -1,19 +1,56 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BtnContainer from "../Container/BtnContainer";
 import SocialLinks from "./SocialLinks";
 import Typewriter from 'typewriter-effect';
 import useSound from 'use-sound';
 import Music from "../../assets/Music/Music.mp3";
-import Avatar from "../../assets/Testimonial/Female_avatar.png"
+import Avatar from "../../assets/Testimonial/Female_avatar.png";
+
+const BIN_ID = "6828d37e8561e97a5015f0ca";
+const API_KEY = "6828cba2ce7767792747d1cd";
 
 const Banner = ({ icons }) => {
+  const [visits, setVisits] = useState(0);
+
+  useEffect(() => {
+    const updateVisits = async () => {
+      try {
+        // 1. Fetch current count
+        const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+          headers: {
+            'X-Master-Key': API_KEY
+          }
+        });
+        const data = await res.json();
+        const newCount = data.record.visits + 1;
+
+        // 2. Update count
+        await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Master-Key': API_KEY
+          },
+          body: JSON.stringify({ visits: newCount })
+        });
+
+        setVisits(newCount);
+      } catch (error) {
+        console.error("Error updating visit count:", error);
+      }
+    };
+
+    updateVisits();
+  }, []);
+
   return (
-    <div className="area md:w-4/5 md:float-right flex flex-col justify-start items-center">
+    <div className="area md:w-4/5 md:float-right flex flex-col justify-start items-center min-h-[150vh]">
       <SoundBtn />
       <Circles />
       <BannerImage />
       <BannerText />
+      <p className="text-white font-medium text-sm mt-3">Total Visits: {visits}</p> {/* Visit count */}
       <SocialLinksList icons={icons} />
       <BtnContainer>
         <button type="button">Hire Me</button>
@@ -25,16 +62,7 @@ const Banner = ({ icons }) => {
 
 const Circles = () => (
   <ul className="circles">
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li> 
-    <li></li>
+    {[...Array(10)].map((_, i) => <li key={i}></li>)}
   </ul>
 );
 
@@ -49,7 +77,7 @@ const BannerText = () => (
       <p className="mr-2">I'm a</p>
       <Typewriter
         options={{
-          strings: ['Software developer.', 'Web Developer.'],
+          strings: ['Software Developer.', 'Web Developer.'],
           autoStart: true,
           loop: true,
         }}
@@ -58,20 +86,12 @@ const BannerText = () => (
   </div>
 );
 
-// Sound effect
 const SoundBtn = () => {
-
   const [play, { pause }] = useSound(Music);
   const [isPlaying, setIsPlaying] = useState(false);
+
   const handleOnClick = () => {
-    {
-      if(isPlaying){
-        pause();
-      }
-      else{  
-        play();
-      }
-    }
+    isPlaying ? pause() : play();
     setIsPlaying(!isPlaying);
   };
 
