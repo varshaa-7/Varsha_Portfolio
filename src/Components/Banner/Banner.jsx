@@ -50,7 +50,7 @@ const Banner = ({ icons }) => {
       <Circles />
       <BannerImage />
       <BannerText />
-      <p className="text-white font-medium text-sm mt-3">Total Visits: {visits}</p> {/* Visit count */}
+      {/* <p className="text-white font-medium text-sm mt-3">Total Visits: {visits}</p>  */}
       <SocialLinksList icons={icons} />
       <BtnContainer>
         <button type="button">Hire Me</button>
