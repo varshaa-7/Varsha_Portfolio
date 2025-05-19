@@ -23,7 +23,7 @@ CountAPI for visit tracking
 
 use-sound for music playback
 
-🧪 Run Locally
+Run Locally
 bash
 Copy
 Edit
@@ -31,7 +31,7 @@ git clone https://github.com/your_username/Varsha_Portfolio.git
 cd Portfolio
 npm install
 npm run dev
-📁 Structure
+Structure
 css
 Copy
 Edit
