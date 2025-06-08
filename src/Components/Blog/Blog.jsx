@@ -3,6 +3,11 @@ import Heading from "../Heading/Heading";
 import BlogArtwork_1 from "../../assets/Blog/Blog1.gif";
 import BlogArtwork_2 from "../../assets/Blog/Blog2.jpg";
 import BlogArtwork_3 from "../../assets/Blog/Blog3.jpg";
+import Aicus from "../../assets/Blog/Aicus.png";
+import Quiz from "../../assets/Blog/Quiz.png";
+import Roster from "../../assets/Blog/Roaster.png";
+import Passo from "../../assets/Blog/Passo.png";
+import Gemini from "../../assets/Blog/Gemini.png"
 import BtnContainer from "../Container/BtnContainer";
 import ShowMore from "./ShowMore";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -10,7 +15,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 // Array of objects for the blog details
 const blogArr = [
   {
-    img: BlogArtwork_1,
+    img: Quiz,
     title: "Quiz App",
     label: "Project1",
     icon: "globe",
@@ -18,7 +23,7 @@ const blogArr = [
     category: "initial"
   },
   {
-    img: BlogArtwork_2,
+    img: Aicus,
     title: "AI Customer Care",
     label: "Project2",
     icon: "globe",
@@ -27,7 +32,7 @@ const blogArr = [
   },
   
   {
-    img: BlogArtwork_3,
+    img: Roster,
     title: "Employee Duty Roaster",
     label: "Project3",
     icon: "globe",
@@ -36,7 +41,7 @@ const blogArr = [
   },
   // Additional part starts here
   {
-    img: BlogArtwork_3,
+    img: Passo,
     title: "Password Manager",
     label: "Project4",
     icon: "globe",
@@ -44,7 +49,7 @@ const blogArr = [
     category: "additional"
   },
   {
-    img: BlogArtwork_2,
+    img: Gemini,
     title: "Gemini Clone",
     label: "Project5",
     icon: "globe",
@@ -69,7 +74,7 @@ const blogArr = [
     category: "additional"
   },
   {
-    img: BlogArtwork_1,
+    img: BlogArtwork_3,
     title: "Youtube Data Scraping",
     label: "Project8",
     icon: "code",
