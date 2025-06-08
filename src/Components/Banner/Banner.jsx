@@ -45,16 +45,16 @@ const Banner = ({ icons }) => {
   }, []);
 
   return (
-    <div className="area md:w-4/5 md:float-right flex flex-col justify-start items-center min-h-[150vh]">
+    <div className="area md:w-4/5 md:float-right flex flex-col justify-start items-center min-h-[100vh]">
       <SoundBtn />
       <Circles />
       <BannerImage />
       <BannerText />
       {/* <p className="text-white font-medium text-sm mt-3">Total Visits: {visits}</p>  */}
       <SocialLinksList icons={icons} />
-      <BtnContainer>
+      {/* <BtnContainer>
         <button type="button">Hire Me</button>
-      </BtnContainer>
+      </BtnContainer> */}
       <ScrollDownLink />
     </div>
   );
@@ -67,12 +67,12 @@ const Circles = () => (
 );
 
 const BannerImage = () => (
-  <img className="z-2" src={Avatar} alt="banner-photo" />
+  <img className="z-0" src={Avatar} alt="banner-photo" />
 );
 
 const BannerText = () => (
   <div className="block">
-    <p className="text-3xl md:text-4xl text-white font-bold my-3 text-center">Varsha Awasthi</p>
+    <p className="text-3xl md:text-4xl text-white font-bold  text-center">Varsha Awasthi</p>
     <div className="text-lg md:text-2xl text-yellow-500 flex justify-center">
       <p className="mr-2">I'm a</p>
       <Typewriter

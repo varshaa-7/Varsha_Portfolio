@@ -98,7 +98,7 @@ const settings = {
 
 function Testimonial () {
   return (
-    <section className="w-screen md:w-[80%] min-h-[130vh] px-10 md:px-0 bg-custom-dark md:float-right overflow-hidden flex flex-col justify-evenly py-10">
+    <section className="w-screen md:w-[80%] min-h-[80vh] px-10 md:px-0 bg-custom-dark md:float-right overflow-hidden flex flex-col justify-evenly py-10">
 
       <Heading faded="Experience" bold="What I have done" theme="text-white" borderColor="border-orange-500"/>
       <Slider {...settings} customPaging={() => (
