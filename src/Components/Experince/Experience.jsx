@@ -34,6 +34,11 @@ const experienceArr = [
     time: "Oct. 2024– Jan. 2025",
     domain: "Full Stack Development Intern",
     company: " Kode Bloom Technologies and Services Pvt. Ltd."
+  },
+  {
+    time: "Jun. 2025– Current",
+    domain: "Engineering Intern",
+    company: " Wingify Software Pvt. Ltd."
   }
 ];
 

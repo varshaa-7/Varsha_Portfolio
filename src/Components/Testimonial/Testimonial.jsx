@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TextContainer from "../Container/TextContainer";
 import Heading from "../Heading/Heading";
-import FemaleClient from "../../assets/Testimonial/Female_avatar.png";
 import HTML from "../../assets/Testimonial/html5Icon.png";
 import CSS from "../../assets/Testimonial/css3Icon.png";
 import REACT from "../../assets/Testimonial/React.png";
@@ -18,6 +17,7 @@ import GitHub from "../../assets/Testimonial/github.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import IOCL from "../../assets/iocl.png"
 import kode from "../../assets/kodebloom.png"
+import wingify from "../../assets/wingify.png"
 // Array of objects for the client details of the testimonial section
 const clientArr = [
   {
@@ -31,6 +31,12 @@ const clientArr = [
     client: " Kode Bloom Technologies and Services Pvt. Ltd.",
     Prof: "Full Stack Development Intern",
     comment: " Lead the development of a company website designed to efficiently handle over 500 users and worked on several fullstack projects.",
+  },
+  {
+    img: wingify,
+    client: " Wingify Software Pvt. Ltd.",
+    Prof: "Engineering Intern",
+    comment: " ∗ Worked on existing AngularJS modules to fix bugs, enhance performance, and improve overall code quality.",
   }
     // },
   // {

@@ -10,19 +10,19 @@ import Avatar from "../../assets/Testimonial/Female_avatar.png"
 const progressArr = [
   {
     domain: "Web development",
-    progress: "90%",
+    progress: "",
     spanColor: "bg-yellow-500",
     width: "w-11/12"
   },
   {
     domain: "DSA",
-    progress: "80%",
+    progress: "",
     spanColor: "bg-red-500",
     width: "w-4/5"
   },
   {
     domain: "Competitive programming",
-    progress: "75%",
+    progress: "",
     spanColor: "bg-blue-500",
     width: "w-9/12"
   }
