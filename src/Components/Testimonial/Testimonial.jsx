@@ -36,7 +36,7 @@ const clientArr = [
     img: wingify,
     client: " Wingify Software Pvt. Ltd.",
     Prof: "Engineering Intern",
-    comment: " ∗ Worked on existing AngularJS modules to fix bugs, enhance performance, and improve overall code quality.",
+    comment: " Worked on existing AngularJS modules to fix bugs, enhance performance, and improve overall code quality.",
   }
     // },
   // {
