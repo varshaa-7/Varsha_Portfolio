@@ -8,6 +8,8 @@ import Quiz from "../../assets/Blog/Quiz.png";
 import Roster from "../../assets/Blog/Roaster.png";
 import Passo from "../../assets/Blog/Passo.png";
 import Gemini from "../../assets/Blog/Gemini.png"
+import NoCode from "../../assets/Blog/NoCode.png";
+import SprintFlow from "../../assets/Blog/SprintFlow.png";
 import BtnContainer from "../Container/BtnContainer";
 import ShowMore from "./ShowMore";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -46,7 +48,7 @@ const blogArr = [
     label: "Project4",
     icon: "globe",
     url: "https://password-manager-one-lyart.vercel.app/",
-    category: "additional"
+    category: "initial"
   },
   {
     img: Gemini,
@@ -81,6 +83,46 @@ const blogArr = [
     url: "https://github.com/varshaa-7/Youtube_data_scraping",
     category: "additional"
   },
+  {
+    img: NoCode,
+    title: "No Code Workflow",
+    label: "Project2",
+    icon: "globe",
+    url: "https://no-code-intelligent-workflow-yv2t.vercel.app/",
+    category: "additional"
+  },
+  {
+    img: SprintFlow,
+    title: "SpritFlow",
+    label: "Project10",
+    icon: "globe",
+    url: "https://sprintflow-1.onrender.com/",
+    category: "additional"
+  },
+  {
+    img: BlogArtwork_1,
+    title: "Signal AI",
+    label: "Project11",
+    icon: "settings_input_component",
+    url: "https://github.com/varshaa-7/Signal_AI",
+    category: "additional"
+  },
+  {
+    img: BlogArtwork_2,
+    title: "Video-Streaming",
+    label: "Project12",
+    icon: "code",
+    url: "https://github.com/varshaa-7/Video-Streaming",
+    category: "additional"
+  },
+  {
+    img: BlogArtwork_3,
+    title: "Webhook",
+    label: "Project13",
+    icon: "settings_input_component",
+    url: "https://github.com/varshaa-7/webhook-repo",
+    category: "additional"
+  },
 ];
 
 function Blog() {
@@ -101,31 +143,38 @@ function Blog() {
       ));
 
   return (
-    <section className="w-screen md:w-[80%] min-h-[130vh] py-16 pt-8 bg-white md:float-right flex flex-col justify-around items-stretch overflow-hidden">
+    <section className="w-full md:w-[85%] md:ml-[15%] min-h-[120vh] py-10 bg-white flex flex-col items-center overflow-hidden">
+      <div className="w-full max-w-7xl px-4 md:px-8 mx-auto">
+        <Heading
+          faded="Projects"
+          bold="What I Create"
+          theme="text-black"
+          borderColor="border-blue-500"
+        />
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
+          <div className="mt-8">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+              {renderBlogs("initial")}
+            </ul>
+            <div
+              className={`transition-all duration-300 mt-3 ${
+                showMore ? "h-auto opacity-100" : "h-0 opacity-0 overflow-hidden"
+              }`}>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+                {renderBlogs("additional")}
+              </ul>
+            </div>
+          </div>
+        </ScrollAnimation>
 
-      <Heading
-        faded="Projects"
-        bold="What I Create"
-        theme="text-black"
-        borderColor="border-blue-500"
-      />
-      <ScrollAnimation animateIn="fadeInUp" animateOnce>
-        <div className="flex flex-col md:gap-5 pt-8">
-          <ul className="flex flex-col md:flex-row justify-evenly items-center md:items-stretch flex-wrap">
-            {renderBlogs("initial")}
-          </ul>
-          <ul className={`${showMore ? "flex justify-evenly flex-wrap relative pt-8" : "hidden absolute"}`}>
-            {renderBlogs("additional")}
-          </ul>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" animateOnce>
-        <div className="flex justify-center mt-10 pt-8 md:mt-0">
-          <BtnContainer onClick={() => setShowMore(!showMore)}>
-            {showMore ? "Show Less" : "Show More"}
-          </BtnContainer>
-        </div>
-      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" animateOnce>
+          <div className="flex justify-center mt-6">
+            <BtnContainer onClick={() => setShowMore(!showMore)}>
+              {showMore ? "Show Less" : "Show More"}
+            </BtnContainer>
+          </div>
+        </ScrollAnimation>
+      </div>
     </section>
   );
 }
