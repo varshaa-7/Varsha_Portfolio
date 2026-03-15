@@ -30,13 +30,13 @@ const clientArr = [
     img: kode,
     client: " Kode Bloom Technologies and Services Pvt. Ltd.",
     Prof: "Full Stack Development Intern",
-    comment: " Lead the development of a company website designed to efficiently handle over 500 users and worked on several fullstack projects.",
+    comment: "Designed and developed secure RESTful APIs and integerated MongoDB as database for user management, data retrieval, and authentication",
   },
   {
     img: wingify,
     client: " Wingify Software Pvt. Ltd.",
     Prof: "Engineering Intern",
-    comment: " Worked on existing AngularJS modules to fix bugs, enhance performance, and improve overall code quality.",
+    comment: "Integrated backend APIs and implement caching to reduce load on website and wrote script on mapping of editor widgets of VWO and AB Tasty",
   }
     // },
   // {

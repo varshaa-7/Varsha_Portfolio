@@ -3,7 +3,6 @@ import Heading from "../Heading/Heading";
 import BtnContainer from "../Container/BtnContainer";
 import Resume from "../../assets/Varsha_Resume.pdf";
 import ScrollAnimation from 'react-animate-on-scroll';
-import CountUp from 'react-countup';
 import Avatar from "../../assets/Testimonial/Female_avatar.png"
 
 
@@ -76,7 +75,7 @@ const ProgressSection = () => (
             <label className="text-sm md:text-base font-mono font-bold opacity-75">{temp.domain}</label>
             <label className="text-sm md:text-base font-mono font-bold opacity-75">{temp.progress}</label>
           </div>
-          <span className={`${temp.spanColor} ${temp.width} h-1 rounded-lg`} />
+          
         </React.Fragment>
       ))
     }

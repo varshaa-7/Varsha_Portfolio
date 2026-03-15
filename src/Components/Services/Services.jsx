@@ -71,7 +71,7 @@ function Services () {
         </div>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp" animateOnce>
-        <p className="text-center text-slate-50 text-base md:text-xl font-semibold px-7 md:px-0">Looking for a custom job? 
+        <p className="text-center text-slate-50 text-base md:text-xl font-semibold px-7 md:px-0">Looking for a Software Developer? 
           <span className="cursor-pointer m-2 text-orange-500 hover:underline" onClick={() => {
             window.location.href="/Contact"
           }}>
