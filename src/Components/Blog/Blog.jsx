@@ -19,41 +19,79 @@ const blogArr = [
   {
     img: Quiz,
     title: "Quiz App",
-    label: "Project1",
+    label: "Project 1",
     icon: "globe",
     url: "https://darling-monstera-54d30a.netlify.app/",
     category: "initial"
   },
   {
-    img: Aicus,
-    title: "AI Customer Care",
-    label: "Project2",
+    img: NoCode,
+    title: "No Code Workflow",
+    label: "Project 2",
     icon: "globe",
-    url: "https://aicustomercare.netlify.app/",
+    url: "https://no-code-intelligent-workflow-yv2t.vercel.app/",
     category: "initial"
   },
-  
   {
+    img: SprintFlow,
+    title: "SpritFlow",
+    label: "Project 3",
+    icon: "globe",
+    url: "https://sprintflow-1.onrender.com/",
+    category: "initial"
+  },
+   {
     img: Roster,
     title: "Employee Duty Roaster",
-    label: "Project3",
+    label: "Project 4",
     icon: "globe",
     url: "https://ioclroaster-varsha-awasthis-projects.vercel.app/",
     category: "initial"
   },
-  // Additional part starts here
+    {
+    img: BlogArtwork_1,
+    title: "Signal AI",
+    label: "Project 5",
+    icon: "settings_input_component",
+    url: "https://github.com/varshaa-7/Signal_AI",
+    category: "additional"
+  },
+  {
+    img: Aicus,
+    title: "AI Customer Care",
+    label: "Project 6",
+    icon: "globe",
+    url: "https://aicustomercare.netlify.app/",
+    category: "additional"
+  },
+    {
+    img: BlogArtwork_3,
+    title: "Webhook",
+    label: "Project 7",
+    icon: "settings_input_component",
+    url: "https://github.com/varshaa-7/webhook-repo",
+    category: "additional"
+  },
+   {
+    img: BlogArtwork_2,
+    title: "Video-Streaming",
+    label: "Project 8",
+    icon: "code",
+    url: "https://github.com/varshaa-7/Video-Streaming",
+    category: "additional"
+  },
   {
     img: Passo,
     title: "Password Manager",
-    label: "Project4",
+    label: "Project 9",
     icon: "globe",
     url: "https://password-manager-one-lyart.vercel.app/",
-    category: "initial"
+    category: "additional"
   },
   {
     img: Gemini,
     title: "Gemini Clone",
-    label: "Project5",
+    label: "Project 10",
     icon: "globe",
     url: "https://gemini-flax-kappa.vercel.app/",
     category: "additional"
@@ -62,7 +100,7 @@ const blogArr = [
   {
     img: BlogArtwork_1,
     title: "TicTacToe App",
-    label: "Project6",
+    label: "Project 11",
     icon: "android",
     url: "https://github.com/varshaa-7/tictactoeapp",
     category: "additional"
@@ -70,7 +108,7 @@ const blogArr = [
   {
     img: BlogArtwork_2,
     title: "KBC",
-    label: "Project7",
+    label: "Project 12",
     icon: "code",
     url: "https://github.com/varshaa-7/kbc",
     category: "additional"
@@ -78,51 +116,15 @@ const blogArr = [
   {
     img: BlogArtwork_3,
     title: "Youtube Data Scraping",
-    label: "Project8",
+    label: "Project 13",
     icon: "code",
     url: "https://github.com/varshaa-7/Youtube_data_scraping",
     category: "additional"
-  },
-  {
-    img: NoCode,
-    title: "No Code Workflow",
-    label: "Project2",
-    icon: "globe",
-    url: "https://no-code-intelligent-workflow-yv2t.vercel.app/",
-    category: "additional"
-  },
-  {
-    img: SprintFlow,
-    title: "SpritFlow",
-    label: "Project10",
-    icon: "globe",
-    url: "https://sprintflow-1.onrender.com/",
-    category: "additional"
-  },
-  {
-    img: BlogArtwork_1,
-    title: "Signal AI",
-    label: "Project11",
-    icon: "settings_input_component",
-    url: "https://github.com/varshaa-7/Signal_AI",
-    category: "additional"
-  },
-  {
-    img: BlogArtwork_2,
-    title: "Video-Streaming",
-    label: "Project12",
-    icon: "code",
-    url: "https://github.com/varshaa-7/Video-Streaming",
-    category: "additional"
-  },
-  {
-    img: BlogArtwork_3,
-    title: "Webhook",
-    label: "Project13",
-    icon: "settings_input_component",
-    url: "https://github.com/varshaa-7/webhook-repo",
-    category: "additional"
-  },
+  }, 
+  
+
+ 
+
 ];
 
 function Blog() {
